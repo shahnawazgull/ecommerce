@@ -1,0 +1,262 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.header-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #00000020;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.text {
+    position: relative;
+    left: -80;
+    cursor: pointer;
+}
+
+.header-div p {
+    color: gray;
+    font-size: 18px;
+}
+
+.header-div .num {
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.icons {
+    font-size: 20px;
+    color: gray;
+    cursor: pointer;
+}
+
+.text p {
+    color: gray;
+}
+
+.nav-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 0px 50px;
+}
+.nav-div ul {
+    list-style: none;
+}
+
+.nav-div a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-link,
+.drop-down li {
+    padding: 10px;
+    font-weight: 600;
+}
+
+.drop-down {
+    position: absolute;
+    margin: 0.5rem -0.5rem;
+    box-shadow: 0px 0px 10px gray;
+    border-radius: 0.5rem;
+    display: none;
+    z-index: 1;
+    text-align: left;
+}
+
+.nav-link:hover .drop-down {
+    display: block;
+}
+
+.nav-link .dropdown-icon {
+    font-size: 18px;
+    position: relative;
+    right: -5px;
+    transform: rotate(0deg);
+    transition: 0.3s ease-in-out all;
+}
+
+.nav-link:hover .dropdown-icon {
+    transform: rotate(180deg);
+    ;
+}
+
+.nav-link:hover a {
+    color: #007aff;
+    transition: all 0.3s ease;
+}
+
+.drop-down li:hover {
+    color: #fff;
+    cursor: pointer;
+    background-color: rgb(81, 81, 81);
+}
+
+.drop-down li {
+    background-color: black;
+    color: #fff;
+}
+
+.pro {
+    color: #007aff;
+    background-color: transparent;
+}
+ul .nav-link:hover .li-anchor a{
+    color: #fff;
+}
+.main-cont{
+    height: auto;
+    position: relative;
+}
+.image img{
+    width: 100%;
+    height: 550px;
+    object-position: 0 -80px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0.9;
+    filter: brightness(90%);
+    display: block;
+    margin-bottom: 7em;
+    opacity: 0.9;
+}
+.img-text{
+    height: 550px;
+    background-color: #c19763;
+    text-transform:uppercase;
+    overflow: hidden;
+    position:absolute ;
+    top: 0;
+    color: #fff;
+    text-align: center;
+    align-items: center;
+}
+.img-text h1{
+    font-size: 50px;
+    font-weight: bolder;
+}
+.img-text h5{
+    margin-top: 370px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+    margin: 10px;
+    margin-bottom: 50px;
+}
+.image-div img{
+    width: 100%;
+    height: 300px;
+    aspect-ratio: 0px 50px;
+    object-fit: cover;   
+    border: 1px solid gray;
+    cursor: pointer;
+}
+.grid-title{
+    padding: 20px;
+    text-align: center;
+    color: gray;
+    border: 1px solid gray;
+    box-shadow: 0px 0px 4px gray;
+}
+.grid-text p{
+    color: #007aff;
+
+}
+.waster{
+    position: relative;
+    display: inline-block;  
+}
+.waster img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+.wastern-div button{
+    border: none;
+    padding: 20px;
+    background-color: #8fb5e0;
+    color: black;
+    width: 20%;
+    position: absolute;
+    top: 350px;
+    left: 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0px 0px 10px darkgray;
+
+}   
+.wastern-div button:hover{
+    cursor: pointer;
+    border-radius: 5px;
+    color: black;
+    background:#7aa8dd;
+    box-shadow: none;
+}
+.wastern-div button a{
+    text-decoration: none;
+    color: currentColor;
+}
+/* footer CSS */
+.footer-container {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    border-top: 1px solid #00000020;
+    padding: 15px 50px;
+    color: gray;
+}
+.ftext {
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    margin-left: 10px;
+    font-size: 12px;
+    opacity: 0.8;
+}
+.ftext .gm{
+    color: black;
+    text-decoration: underline;
+}
+.ftext a {
+    color: currentColor;
+    font-size: 18px;
+    color: gray;
+    text-decoration: none;
+}
+.ftext h2,h3 {
+    color: gray;
+    font-size: 18px;
+    font-weight: 600;
+}
+ul .nav-link:hover .li-anchor a{
+    color: #fff;
+}
+.footer-container>div a ,h3 {
+font-size: 15px;
+text-decoration: dashed;
+}

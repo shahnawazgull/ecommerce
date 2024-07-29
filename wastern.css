@@ -1,0 +1,254 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.header-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #00000020;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.text {
+    position: relative;
+    left: -80;
+    cursor: pointer;
+}
+
+.header-div p {
+    color: gray;
+    font-size: 18px;
+}
+
+.header-div .num {
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.icons {
+    font-size: 20px;
+    color: gray;
+    cursor: pointer;
+}
+
+.text p {
+    color: gray;
+}
+
+.nav-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 0px 50px;
+}
+.nav-div ul {
+    list-style: none;
+}
+
+.nav-div a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-link,
+.drop-down li {
+    padding: 10px;
+    font-weight: 600;
+}
+
+.drop-down {
+    position: absolute;
+    margin: 0.5rem -0.5rem;
+    box-shadow: 0px 0px 10px gray;
+    border-radius: 0.5rem;
+    display: none;
+    z-index: 1;
+    text-align: left;
+}
+
+.nav-link:hover .drop-down {
+    display: block;
+}
+
+.nav-link .dropdown-icon {
+    font-size: 18px;
+    position: relative;
+    right: -5px;
+    transform: rotate(0deg);
+    transition: 0.3s ease-in-out all;
+}
+
+.nav-link:hover .dropdown-icon {
+    transform: rotate(180deg);
+    ;
+}
+
+.nav-link:hover a {
+    color: #007aff;
+    transition: all 0.3s ease;
+}
+
+.drop-down li:hover {
+    color: #fff;
+    cursor: pointer;
+    background-color: rgb(81, 81, 81);
+}
+
+.drop-down li {
+    background-color: black;
+    color: #fff;
+}
+
+.pro {
+    color: #007aff;
+    background-color: transparent;
+}
+ul .nav-link:hover .li-anchor a{
+    color: #fff;
+}
+.main-img{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.main-img img{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.grid{
+    display: flex;
+    justify-content: center;
+    max-width: 1300px;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.box{
+    width: 400px;
+    padding: 10px 3px 0px;
+}
+.box img{
+    width: 100%;
+    object-fit: cover;
+}
+.box-text{
+    margin-top: -3.5px;
+    text-align: left;
+    box-shadow: 0px 0px 1px gray;
+    padding: 15px 15px 5px;
+    background-color: #fff;
+    min-height: 110px;
+    line-height: 1.3;
+    margin-bottom: 4px;
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+    padding:5px 10px ;
+    color:#007aff;
+}
+.price h6{
+    color: rgba(128, 128, 128, 0.606);
+}
+.box:hover{
+    cursor: pointer;
+}
+.grid2{
+    display: flex;
+    justify-content: center;
+    max-width: 1300px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin: auto;
+
+}
+.box2{
+    width: 400px;
+    padding: 10px 3px 0px;
+}
+.box2 img{
+    width: 100%;
+    object-fit: cover;
+}
+.box2-text{
+    margin-top: -3.5px;
+    text-align: left;
+    box-shadow: 0px 0px 1px gray;
+    padding: 15px 15px 5px;
+    background-color: #fff;
+    min-height: 110px;
+    line-height: 1.3;
+}
+.price2{
+    display: flex;
+    justify-content: space-between;
+    padding:5px 10px ;
+    color:#007aff;
+}
+.price2 h6{
+    color: rgba(128, 128, 128, 0.606);
+}
+.box2:hover{
+    cursor: pointer;
+}
+/* footer CSS */
+.footer-container {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    border-top: 1px solid #00000020;
+    padding: 15px 50px;
+    color: gray;
+}
+.ftext {
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    margin-left: 10px;
+    font-size: 12px;
+    opacity: 0.8;
+}
+.ftext .gm{
+    color: black;
+    text-decoration: underline;
+}
+.ftext a {
+    color: currentColor;
+    font-size: 18px;
+    color: gray;
+    text-decoration: none;
+}
+.ftext h2,h3 {
+    color: gray;
+    font-size: 18px;
+    font-weight: 600;
+}
+ul .nav-link:hover .li-anchor a{
+    color: #fff;
+}
+.footer-container>div a ,h3 {
+font-size: 15px;
+text-decoration: dashed;
+}

@@ -1,0 +1,280 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.header-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #00000020;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+
+.header-div p {
+    color: gray;
+    font-size: 18px;
+}
+
+.header-div .num {
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.icons {
+    font-size: 20px;
+    color: gray;
+    cursor: pointer;
+}
+
+.text p {
+    color: gray;
+}
+
+.nav-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 0px 50px;
+}
+
+.nav-div ul {
+    list-style: none;
+}
+
+.nav-div a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-link,
+.drop-down li {
+    padding: 10px;
+    font-weight: 600;
+}
+
+.drop-down {
+    position: absolute;
+    margin: 0.5rem -0.5rem;
+    box-shadow: 0px 0px 10px gray;
+    border-radius: 0.5rem;
+    display: none;
+    z-index: 1;
+    text-align: left;
+}
+
+.nav-link:hover .drop-down {
+    display: block;
+}
+
+.nav-link .dropdown-icon {
+    font-size: 18px;
+    position: relative;
+    right: -5px;
+    transform: rotate(0deg);
+    transition: 0.3s ease-in-out all;
+}
+
+.nav-link:hover .dropdown-icon {
+    transform: rotate(180deg);
+    ;
+}
+
+.nav-link:hover a {
+    color: #007aff;
+    transition: all 0.3s ease;
+}
+
+.drop-down li:hover {
+    color: #fff;
+    cursor: pointer;
+    background-color: rgb(81, 81, 81);
+}
+
+.drop-down li,.li-anchor {
+    background-color: black;
+    color: #fff;
+}
+
+.pro {
+    color: #007aff;
+    background-color: transparent;
+}
+
+.image img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0.9;
+    filter: brightness(90%);
+    display: block;
+    margin-bottom: 7em;
+}
+
+.container {
+    height: auto;
+    position: relative;
+}
+
+.heading {
+    position: absolute;
+    top: 160px;
+    font-size: 36px;
+    left: 40px;
+    word-spacing: normal;
+}
+
+.para {
+    position: absolute;
+    top: 355px;
+    font-size: 18px;
+    left: 40px;
+    color: gray;
+}
+
+.btn {
+    position: absolute;
+    top: 555px;
+    font-size: 36px;
+    left: 40px;
+}
+
+.btn button {
+    border: none;
+    padding: 20px;
+    width: 250px;
+    background-color: #fff;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+.button-anchor a{
+    text-decoration: none;
+    color: currentColor;
+}
+
+.container-product {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+    text-align: center;
+    align-items: center;
+    margin: 25px auto;
+    cursor: pointer;
+    overflow: hidden;
+    
+}
+
+.product img {
+    width: 100%;
+    aspect-ratio: 1.1;
+    object-fit: cover;
+    padding: 10px;
+}
+.product img{
+    border: 1px solid var(--grey-color);
+}
+.box-text {
+    text-align: left;
+    width: 100%;
+
+}
+
+.box-text p {
+    color: #6995b1;
+    font-size: 20px;
+}
+
+.view-more {
+    text-align: center;
+    margin: 25px auto;
+}
+
+.view-more h1 {
+    font-size: 2.6em;
+    font-weight: 700;
+    text-align: left;
+    margin: 10px;
+}
+
+.view-more a {
+    margin-top: 16px;
+    font-size: 18px;
+    font-weight: 500;
+    position: absolute;
+    text-transform: capitalize;
+    right: 18px;
+    text-decoration: none;
+    color: currentColor;
+    color: #191919;
+}
+
+.view-more a:hover {
+    color: #007aff;
+    transition: all 0.2s ease;
+}
+.product img:hover {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    transform: scale(1.1);
+}
+.footer-container {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    border-top: 1px solid #00000020;
+    padding: 15px 50px;
+    color: gray;
+}
+.ftext {
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    margin-left: 10px;
+    font-size: 12px;
+    opacity: 0.8;
+}
+.ftext a {
+    color: currentColor;
+    font-size: 18px;
+    color: gray;
+    text-decoration: none;
+}
+.ftext h2,h3 {
+    color: gray;
+    font-size: 18px;
+    font-weight: 600;
+}
+ul .nav-link:hover .li-anchor a{
+    color: #fff;
+}
+.ftext .gm{
+    color: black;
+    text-decoration: underline;
+}
