@@ -1,683 +1,142 @@
-* {
-    padding: 0;
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    box-sizing: border-box;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-}
-
-.header-div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    border: 1px solid #00000020;
-    padding: 10px;
-    margin-bottom: 20px;
-}
-
-
-.header-div p {
-    color: gray;
-    font-size: 18px;
-}
-
-.header-div .num {
-    font-size: 20px;
-    font-weight: bold;
-
-}
-
-.icons {
-    font-size: 20px;
-    color: gray;
-    cursor: pointer;
-}
-
-.text p {
-    color: gray;
-}
-
-.nav-div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-    padding: 0px 50px;
-}
-
-.nav-div ul {
-    list-style: none;
-}
-
-.nav-div a {
-    text-decoration: none;
-    color: currentColor;
-}
-
-.nav-links {
-    display: flex;
-    gap: 2rem;
-}
-
-.nav-link,
-.drop-down li {
-    padding: 10px;
-    font-weight: 600;
-}
-
-.drop-down {
-    position: absolute;
-    margin: 0.5rem -0.5rem;
-    box-shadow: 0px 0px 10px gray;
-    border-radius: 0.5rem;
-    display: none;
-    z-index: 1;
-    text-align: left;
-}
-
-.nav-link:hover .drop-down {
-    display: block;
-}
-
-.nav-link .dropdown-icon {
-    font-size: 18px;
-    position: relative;
-    right: -5px;
-    transform: rotate(0deg);
-    transition: 0.3s ease-in-out all;
-}
-
-.nav-link:hover .dropdown-icon {
-    transform: rotate(180deg);
-    ;
-}
-
-.nav-link:hover a {
-    color: #007aff;
-    transition: all 0.3s ease;
-}
-
-.drop-down li:hover {
-    color: #fff;
-    cursor: pointer;
-    background-color: rgb(81, 81, 81);
-}
-
-.drop-down li,
-.li-anchor {
-    background-color: black;
-    color: #fff;
-}
-
-.pro {
-    color: #007aff;
-    background-color: transparent;
-}
-
-.container {
-    width: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
-    position: relative;
-    height: 90vh;
-    overflow: hidden;
-    margin-bottom: 50px;
-}
-
-main .text {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    font-size: 20px;
-    font-weight: 600;
-}
-
-main .form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 20px;
-}
-
-main .form input {
-    padding: 10px;
-    font-size: 20px;
-    text-align: center;
-    border: 1px solid rgba(128, 128, 128, 0.356);
-    border-radius: 10px;
-    width: 50%;
-    margin: auto;
-
-}
-
-main .form input {
-    margin-bottom: 20px;
-}
-
-main .form button {
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    font-size: 20px;
-    font-weight: 600;
-    background-color: #7e5f32;
-    color: white;
-    width: 50%;
-    margin: auto;
-}
-
-.t2 {
-    padding: 10px;
-    box-shadow: 0px 0px 10px gray;
-
-}
-
-a {
-    text-decoration: none;
-    color: currentColor;
-}
-
-main .form button:hover {
-    background-color: #dc8a0f;
-    cursor: pointer;
-}
-
-.image {
-    width: 100%;
-    padding-bottom: 60.25%;
-    /* 16:9 Aspect Ratio */
-    background-image: url('shani.jpeg');
-    background-size: cover;
-    background-position: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin-bottom: 7em;
-}
-
-.footer-container {
-    margin-top: 60px;
-    display: flex;
-    justify-content: space-between;
-    text-align: left;
-    border-top: 1px solid #00000020;
-    padding: 15px 50px;
-}
-
-.ftext {
-    display: flex;
-    flex-direction: column;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: center;
-    margin-left: 10px;
-    font-size: 12px;
-    opacity: 0.8;
-}
-
-.menu {
-    display: none;
-}
-
-.ftext a {
-    color: currentColor;
-    font-size: 18px;
-    color: gray;
-    text-decoration: none;
-}
-
-.ftext h2,
-h3 {
-    color: gray;
-    font-size: 18px;
-    font-weight: 600;
-}
-
-ul .nav-link:hover .li-anchor a {
-    color: #fff;
-}
-
-.ftext .gm {
-    color: black;
-    text-decoration: underline;
-}
-
-marquee {
-    background-color: rgba(128, 128, 128, 0.219);
-    color: rgba(0, 0, 0, 0.606);
-    margin-top: 20px;
-    padding: 10px;
-}
-@media screen and (max-width:480px) {
-    .header-div {
-        padding: 3px;
-        margin-bottom: 0;
-        flex-direction: column;
-
-    }
-
-    .header-div p {
-        font-size: 14px;
-    }
-
-    .nav-links {
-        gap: 1rem;
-    }
-
-    .nav-div .text h1 {
-        cursor: pointer;
-    }
-
-    .nav-div .text p {
-        font-size: 14px;
-    }
-
-    .nav-link,
-    .drop-down li {
-        padding: 5px;
-        font-weight: 400;
-    }
-
-    .nav-link .dropdown-icon {
-        font-size: 13px;
-    }
-
-    .container {
-        max-width: 480px;
-        height: 38vh;
-        margin-bottom: 10px;
-    }
-
-    main .text {
-        padding: 5px;
-        font-size: 15px;
-        font-weight: 400;
-    }
-
-    .image {
-        margin-bottom: 0px;
-    }
-
-    .t2 {
-        padding: 40px;
-        box-shadow: 0px 0px 1px gray;
-    }
-
-    main .form input {
-        font-size: 18px;
-    }
-
-    main .form button {
-        font-size: 18px;
-    }
-
-    .header-div .num {
-        font-size: 14px;
-    }
-
-    .icons i {
-        margin-left: 10px;
-    }
-
-    .navbar {
-        display: none;
-        /* Initially hidden, shown in media query */
-        font-size: 1.5em;
-        /* Larger icon */
-        cursor: pointer;
-    }
-
-    .menu {
-        display: block;
-        position: relative;
-        /* So it can move independently */
-        z-index: 10;
-        /* Above other elements */
-        cursor: pointer;
-    }
-
-    .menu i {
-        font-size: 20px;
-    }
-
-    .navbar {
-        display: none;
-        /* Hide the navbar by default */
-        position: absolute;
-        /* Position over other content */
-        top: 130px;
-        /* Adjust based on your header height */
-        left: 0;
-        width: 100%;
-        background-color: white;
-        /* Match site background */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        /* Subtle shadow */
-        z-index: 9;
-        /* Below the icon */
-        transition: all 0.3s ease-in-out;
-        /* Smooth transition */
-    }
-
-    .navbar.active {
-        display: block;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        /* Stack vertically */
-        gap: 0;
-        /* Remove gaps */
-    }
-
-    .nav-link {
-        padding: 10px 20px;
-        /* Space around links */
-        border-bottom: 1px solid #ddd;
-        /* Separate links */
-    }
-
-    .nav-div a {
-        font-size: 18px;
-    }
-
-    .footer-container {
-        padding: 0 15px;
-        /* Reduce padding */
-        flex-direction: column;
-        /* Stack vertically */
-        align-items: center;
-        /* Center content */
-    }
-
-    .drop-down {
-        font-size: 18px;
-    }
-
-    .ftext {
-        text-align: center;
-        /* Center text within each section */
-        margin: 10px 0;
-        /* Margin around sections */
-        width: 100%;
-        /* Ensure full width for alignment */
-        font-size: 20px;
-    }
-
-    .ftext h1,
-    .ftext h3 {
-        font-size: 20px;
-    }
-
-    .ftext p {
-        margin-bottom: 10px;
-        /* Space below paragraphs */
-    }
-
-    .ftext a {
-        font-size: 14px;
-        margin: 5px 0;
-        /* Space between links */
-        display: block;
-        /* Ensure links are block level */
-    }
-
-    .ftext a:hover {
-        text-decoration: underline;
-        /* Underline on hover */
-    }
-
-    .ftext .icons {
-        margin-top: 10px;
-        /* Space above icons */
-    }
-
-    .ftext .icons i {
-        font-size: 1.2em;
-        /* Smaller icon size */
-        margin: 0 5px;
-        /* Reduce space around icons */
-    }
-
-    marquee {
-        padding: 0px;
-    }
-
-    marquee h2 {
-        font-size: 20px;
-    }
-
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    .header-div {
-        padding: 5px;
-        margin-bottom: 10px;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .header-div p {
-        font-size: 16px;
-    }
-
-    .header-div .num {
-        font-size: 18px;
-    }
-
-    .nav-div {
-        padding: 0px 20px;
-    }
-
-    .nav-links {
-        gap: 1.5rem;
-    }
-
-    .nav-link,
-    .drop-down li {
-        padding: 8px;
-        font-weight: 500;
-    }
-
-    .nav-link .dropdown-icon {
-        font-size: 16px;
-    }
-
-    .container {
-        max-width: 800px;
-        height: 60vh;
-    }
-
-    main .text {
-        font-size: 18px;
-        font-weight: 500;
-    }
-
-    main .form input,
-    main .form button {
-        font-size: 18px;
-        width: 60%;
-    }
-    .footer-container {
-        padding: 15px;
-    }
-
-    .ftext {
-        font-size: 16px;
-        text-align: center;
-        margin: 10px 0;
-        width: 100%;
-    }
-    .ftext h1,
-    .ftext h3 {
-        font-size: 17px;
-    }
-
-    .ftext a {
-        font-size: 15px;
-        margin: 5px 0;
-    }
-
-    .ftext .icons i {
-        font-size: 1.2em;
-        margin: 0 6px;
-    }
-
-    marquee {
-        font-size: 16px;
-    }
-    .menu {
-        display: block;
-        position: relative;
-        /* So it can move independently */
-        z-index: 10;
-        /* Above other elements */
-        cursor: pointer;
-    }
-
-    .menu i {
-        font-size: 20px;
-    }
-}
-    @media screen and (min-width: 481px) and (max-width: 767px) {
-    .header-div {
-        padding: 5px;
-        margin-bottom: 10px;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .header-div p {
-        font-size: 14px;
-    }
-
-    .header-div .num {
-        font-size: 16px;
-    }
-
-    .nav-div {
-        padding: 0px 15px;
-    }
-
-    .nav-links {
-        gap: 1rem;
-    }
-
-    .nav-link,
-    .drop-down li {
-        padding: 8px;
-        font-weight: 500;
-    }
-
-    .nav-link .dropdown-icon {
-        font-size: 14px;
-    }
-
-    .container {
-        max-width: 600px;
-        height: 50vh;
-    }
-
-    main .text {
-        font-size: 16px;
-        font-weight: 500;
-        padding: 10px;
-    }
-
-    main .form input,
-    main .form button {
-        font-size: 16px;
-        width: 70%;
-    }
-
-    .menu {
-        display: block;
-        position: relative;
-        /* So it can move independently */
-        z-index: 10;
-        /* Above other elements */
-        cursor: pointer;
-    }
-
-    .menu i {
-        font-size: 28px;
-    }
-
-    .navbar {
-        display: none;
-        /* Hide the navbar by default */
-        position: absolute;
-        /* Position over other content */
-        top: 150px;
-        /* Adjust based on your header height */
-        left: 0;
-        width: 100%;
-        background-color: white;
-        /* Match site background */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        /* Subtle shadow */
-        z-index: 9;
-        /* Below the icon */
-        transition: all 0.3s ease-in-out;
-        /* Smooth transition */
-    }
-    .navbar.active {
-        display: block;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        /* Stack vertically */
-        gap: 0;
-        /* Remove gaps */
-    }
-
-    .nav-link {
-        padding: 10px 20px;
-        /* Space around links */
-        border-bottom: 1px solid #ddd;
-        /* Separate links */
-    }
-
-    .nav-div a {
-        font-size: 20px;
-    }
-
-    .drop-down{
-        font-size: 20px;
-    }
-    .image {
-        padding-bottom: 60%;
-        margin-bottom: 2em;
-    }
-
-    .footer-container {
-        padding: 12px;
-    }
-
-    .ftext {
-        font-size: 14px;
-        margin: 10px 0;
-        width: 100%;
-    }
-
-    .ftext h1,
-    .ftext h3 {
-        font-size: 14px;
-    }
-
-    .ftext a {
-        font-size: 13px;
-        margin: 5px 0;
-    }
-
-    .ftext .icons i {
-        font-size: 1.2em;
-        margin: 0 6px;
-    }
-
-    marquee {
-        font-size: 14px;
-        padding: 7px;
-    }
-}
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="thankyou.css">
+    <title>Shani's Store</title>
+</head>
+<body>
+    <header>
+        <div class="header-div">
+            <div>
+                <p>Let's Talk! <span class="num">+92300 8715459</span></p>  
+            </div>
+            <div>
+                <p>Free shipping on a purchase value of $40.00</p>
+            </div>
+            <div class="icons">
+                <i class="fa fa-user-o" aria-hidden="true"></i>
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="nav-div">
+            <div class="text">
+                <h1>Shani's.</h1>
+                <p>Casual Wear Store</p>
+            </div>
+            <div class="menu" id="menu-icon">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+            <nav class="navbar" id="navbar">
+                <ul class="nav-links">
+                    <li class="nav-link">
+                        <a href="#">Home <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </a>
+                        <ul class="drop-down">
+                            <li class="li-anchor"><a href="ecommerce.html">Home</a></li>
+                            <li>Home V2 <span class="pro">(PRO)</span></li>
+                        </ul>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#footer">About</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">Shop <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </a>
+                        <ul class="drop-down">
+                            <li>Shop Slider <span class="pro">(PRO)</span></li>
+                            <li>Shop Grid <span class="pro">(PRO)</span></li>
+                            <li>Shop List <span class="pro">(PRO)</span></li>
+                            <li>Single List <span class="pro">(PRO)</span></li>
+                            <li>Cart <span class="pro">(PRO)</span></li>
+                            <li>Wishlist <span class="pro">(PRO)</span></li>
+                            <li>Checkout <span class="pro">(PRO)</span></li>
+                        </ul>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">Pages <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </a>
+                        <ul class="drop-down">
+                            <li>Upcoming <span class="pro">(PRO)</span></li>
+                            <li class="li-anchor"><a href="Login.html">Login/Sign Up</a></span></li>
+                            <li>FAQs <span class="pro">(PRO)</span></li>
+                            <li>Styles</li>
+                            <li>Thankyou</li>
+                            <li>Error Page <span class="pro">(PRO)</span></li>
+                        </ul>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">Blog <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </a>
+                        <ul class="drop-down">
+                            <li>Blog With Sidebar <span class="pro">(PRO)</span></li>
+                            <li>Blog Masonry <span class="pro">(PRO)</span></li>
+                            <li>Single Post <span class="pro">(PRO)</span></li>
+                        </ul>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#footer">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="image">
+            </div>
+        </div>
+        <div class="text">
+            <div class="t2">
+            Thank You, We have a Special Gift For You...
+
+            <div class="form">
+                <input type="text" placeholder="Save50">
+                <button><a href="index.html">Shop Now</a></button>
+            </div>
+        </div>
+    </div>
+    </main>
+    <footer id="footer">
+        <marquee behavior="" direction="">
+            <h2 >7  Days Return From Any Branch</h2>
+        </marquee>
+        <div class="footer-container">
+            <div class="ftext">
+                <h1>Shani's</h1>
+                <a href="">About Us</a>
+                <a href="">Conditions</a>
+                <a href="">Our Journals</a>
+                <a href="">Careers</a>
+                <a href="">Social Platforms</a>
+            </div>
+            <div class="ftext">
+                <h1>Customer Services</h1>
+                <a href="">FAQ</a>
+                <a href="">Contact</a>
+                <a href="">Privacy Policy</a>
+                <a href="">Returns & Funds</a>
+                <a href="">Cookie Guidelines</a>
+                <a href="">Delivery Information</a>
+            </div>
+            <div class="ftext">
+                <h1>Contact Us</h1>
+                <h3>Do you have any questions or suggestions</h3>
+                <a href=""><h3 class="gm">shahnawazgull2166@gmail.com</h3></a>
+                <h3>Do you need assistance?</h3>
+                <h3>Give us a call</h3>
+                <h3>+92300 8715459</h3>
+                <div class="icons">
+                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-whatsapp" aria-hidden="true"></i>
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
