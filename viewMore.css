@@ -81,7 +81,9 @@
     z-index: 1;
     text-align: left;
 }
-
+.drop-down a{
+    color: currentColor;
+}
 .nav-link:hover .drop-down {
     display: block;
 }
