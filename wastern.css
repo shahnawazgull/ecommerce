@@ -80,9 +80,7 @@
     z-index: 1;
     text-align: left;
 }
-.drop-down a{
-    color: currentColor;
-}
+
 .nav-link:hover .drop-down {
     display: block;
 }
@@ -115,7 +113,9 @@
     background-color: black;
     color: #fff;
 }
-
+.nav-link .drop-down a{
+    color: white;
+}
 .pro {
     color: #007aff;
     background-color: transparent;
@@ -253,4 +253,133 @@ ul .nav-link:hover .li-anchor a{
 .footer-container>div a ,h3 {
 font-size: 15px;
 text-decoration: dashed;
+}
+marquee {
+    background-color: rgba(128, 128, 128, 0.219);
+    color: rgba(0, 0, 0, 0.606);
+    margin-top: 50px;
+    padding: 10px;
+}
+.menu{
+    display: none;
+}
+@media screen and (max-width:860px)
+{
+    .header-div {
+        padding: 6px;
+        margin-bottom: 8px;
+    }
+    .nav-div{
+        padding: 0px 5px
+    }
+    footer marquee{
+        padding: 7px;
+    }
+    .box,.box2{
+        width: 350px;
+    }
+    .footer-container{
+        padding: 10px 0px;
+    }
+    .header-div .num {
+        font-size: 18px;
+    }
+    .header-div p {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:752px){
+    .grid.grid2 {
+        margin-top: 30px;
+    }
+    .box,.box2{
+        width: 300px;
+    }
+    .menu{
+        display: block;
+        cursor: pointer;
+        position: relative;
+        z-index: 10;
+    }
+    .menu i{
+        font-size: 20px;
+    }
+    .navbar{
+        display: none;
+        position: absolute;
+        top: 130px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 9;
+        transition: all 0.3s ease-in-out;
+        text-align: left;
+        padding: 0 50px;
+    }
+    .navbar .active {
+        display: block;
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 0;
+    }
+    .nav-link {
+        padding: 10px 20px;
+        border-bottom: 1px solid #ddd;
+
+    }
+}
+@media screen and (max-width:660px){
+    .header-div{
+        flex-direction: column;
+    }
+    .icons i{
+        padding: 10px;
+    }
+    .box,.box2{
+        width: 300px;
+        /* margin: 40px; */
+    }
+    .box-text ,.box2-text{
+        font-size: 15px;
+        font-weight: normal;
+        padding: 8px 10px 2px;
+    }
+    .price ,.price2{
+        font-size: 16px;
+        padding: 5px;
+    }
+    .nav-div .text h1{
+        font-size: 1.7em;
+    }
+    .nav-div .text p{
+        font-size: 13px;
+    }
+    footer marquee{
+        padding: 3px;
+    }
+    footer marquee h2{
+        font-size: 20px;
+    }
+    .footer-container
+    {
+        flex-direction: column;
+    }
+    .ftext{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:610px)
+{
+    .box,.box2{
+        width: 260px;
+    }
+}
+@media screen and (max-width:480px)
+{
+    .box, .box2{
+        width: 450px;
+        margin: 10%;
+    }
 }
