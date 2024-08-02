@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION['id'] = $id;
             $_SESSION['firstname'] = $firstname;
 
-            header("Location: welcome.php");
+            header("Location: index.html");
             exit();
         } else {
             echo "Login failed. Invalid email or password.";
