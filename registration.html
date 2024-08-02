@@ -3,42 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Login Page</title>
-        <link rel="stylesheet" type="text/css" href="Registration.css">
-        
-    </head>
-    <body>
-        <div class="container">
-            <h2>Registration Form</h2>
-            <form action="registration.php" method="post" class="form-group">
-                <div class="form-group name">
-                <input type="text" name="firstname" placeholder="First Name">
-                <input type="text" name="lastname" placeholder="Last Name">
-                
+    <title>Registration Page</title>
+    <link rel="stylesheet" type="text/css" href="Registration.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form action="registration.php" method="post" class="form-group">
+            <div class="form-group name">
+                <label for="firstname">First Name</label>
+                <input type="text" name="firstname" id="firstname" placeholder="First Name">
+            </div>
+            <div class="form-group name">
+                <label for="lastname">Last Name</label>
+                <input type="text" name="lastname" id="lastname" placeholder="Last Name">
             </div>
             <div class="form-group">
+                <label for="email">Email</label>
                 <input type="email" name="email" id="email" placeholder="Enter Your Email">
             </div>
             <div class="pass">
-                <input type="password" name="password" placeholder="Enter your Password">
-            </div >
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Enter Your Password">
+            </div>
             <div class="pass">
-                <input type="password" name="confirmpassowrd" placeholder="Confirm Password">
+                <label for="confirmpassword">Confirm Password</label>
+                <input type="password" name="confirmpassword" id="confirmpassword" placeholder="Confirm Password">
             </div>
             <div class="radio">
+                <label>Gender</label><br>
+                <input type="radio" id="male" name="gender" checked value="Male">
+                <label for="male">Male</label>
                 
-                <input type="radio" id="male" name="gender" checked value="Male" >
-                <label for="male">Male<br></label>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
                 
-                <input type="radio" id="Female" name="gender" value="Female">
-                <label for="Female">Female<br></label>
-                
-                <input type="radio" id="Other" name="gender" value="Other">
-                <label for="Other">Other<br></label>
+                <input type="radio" id="other" name="gender" value="Other">
+                <label for="other">Other</label>
             </div>
-            <div>
+            <div class="form-group">
                 <select name="country" id="country">
-                    <option value="" disabled selected>--Choose Country</option>
+                    <option value="" disabled selected>-- Choose Country --</option>
                     <option value="Pakistan">Pakistan</option>
                     <option value="India">India</option>
                     <option value="Afghanistan">Afghanistan</option>
@@ -46,9 +51,11 @@
                     <option value="USA">USA</option>
                 </select>
             </div>
-            <div>
-                
-                <label for="checkbox"> <input type="checkbox" id="checkbox">  I Accept the terms and conditions</label>
+            <div class="form-group">
+                <label for="checkbox">
+                    <input type="checkbox" id="checkbox" name="terms">
+                    I Accept the terms and conditions
+                </label>
             </div>
             <div class="button-group">
                 <input type="submit" value="Register" id="Register">
@@ -56,6 +63,7 @@
                     <input type="button" value="Login" id="Login">
                 </a>
             </div>
-            </form>
-        </div>
-    </body>
+        </form>
+    </div>
+</body>
+</html>
